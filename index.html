@@ -1,0 +1,1254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sourav Nath | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0f172a; /* Deep Dark Blue */
+        color: white;
+        scroll-behavior: smooth;
+      }
+
+      /* Glassmorphism Effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+      }
+
+      /* Profile Image Animation */
+      .profile-img {
+        border: 5px solid rgba(139, 92, 246, 0.5);
+        animation: float 4s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      /* Gradient Text */
+      .text-gradient {
+        background: linear-gradient(to right, #8b5cf6, #3b82f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass mt-4 max-w-6xl left-1/2 -translate-x-1/2"
+    >
+      <div class="text-2xl font-bold tracking-tighter">
+        SOURAV <span class="text-purple-500">NATH</span>
+      </div>
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li>
+          <a href="#home" class="hover:text-purple-400 transition">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-purple-400 transition">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-purple-400 transition"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-purple-400 transition"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <button
+        class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-purple-500/30"
+      >
+        Let's Talk
+      </button>
+      <!-- <a href="YOUR_LINK" class="hover:text-red-500 transition"
+        ><i class="fa-brands fa-youtube"></i
+      ></a> -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center pt-20 px-6"
+    >
+      <div
+        class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left Content -->
+        <div class="order-2 md:order-1 text-center md:text-left">
+          <h3 class="text-xl md:text-2xl font-medium text-gray-300 mb-2">
+            Hello, I'm
+          </h3>
+          <h1 class="text-5xl md:text-7xl font-bold mb-4">Sourav Nath</h1>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">
+            I am a <span id="typing-text" class="text-gradient"></span>
+          </h2>
+          <p class="text-gray-400 text-lg mb-8 max-w-md leading-relaxed">
+            I build modern, responsive, and user-friendly websites. Focused on
+            creating clean code and great user experiences.
+          </p>
+
+          <div class="flex flex-wrap justify-center md:justify-start gap-4">
+            <a
+              href="#contact"
+              class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 shadow-xl shadow-purple-500/20"
+            >
+              Hire Me
+            </a>
+            <a
+              href="your-resume.pdf"
+              download
+              class="border border-purple-500 hover:bg-purple-500/10 text-white px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105"
+            >
+              Download CV <i class="fa-solid fa-download ml-2"></i>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div
+            class="mt-10 flex justify-center md:justify-start space-x-6 text-2xl text-gray-400"
+          >
+            <a href="#" class="hover:text-purple-500 transition"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#" class="hover:text-purple-500 transition"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" class="hover:text-purple-500 transition"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Right Content (Image) -->
+        <div class="order-1 md:order-2 flex justify-center">
+          <div class="relative w-64 h-64 md:w-80 md:h-80">
+            <!-- Background Decoration -->
+            <div
+              class="absolute -inset-4 bg-purple-500/20 rounded-full blur-3xl"
+            ></div>
+            <!-- Profile Image -->
+            <img
+              src="./images/IMG_20250905_160636.jpg"
+              alt="Sourav Nath"
+              class="profile-img w-full h-full object-cover rounded-full shadow-2xl relative z-10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-4xl font-bold text-center mb-16 underline decoration-purple-500 underline-offset-8"
+        >
+          About <span class="text-purple-500">Me</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Left: Intro & Goal -->
+          <div class="glass p-8 space-y-6">
+            <div>
+              <h3 class="text-2xl font-semibold mb-4 text-purple-400">
+                <i class="fa-solid fa-user-tie mr-2"></i> Professional
+                Introduction
+              </h3>
+              <p class="text-gray-300 leading-relaxed text-lg">
+                I am a passionate **Frontend Developer** based in Feni,
+                Bangladesh. I love turning complex problems into simple,
+                beautiful, and intuitive designs. My journey started with a
+                curiosity for how things work on the web, and now I build
+                high-performance web applications.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold mb-4 text-purple-400">
+                <i class="fa-solid fa-bullseye mr-2"></i> Career Goal
+              </h3>
+              <p class="text-gray-300 leading-relaxed">
+                My goal is to become a **Full-Stack Developer** and work on
+                large-scale applications that solve real-world problems. I am
+                constantly learning new technologies like React and Next.js to
+                stay ahead in the industry.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Education & Experience -->
+          <div class="space-y-6">
+            <!-- Education -->
+            <div class="glass p-6">
+              <h3 class="text-2xl font-semibold mb-4 text-purple-400">
+                <i class="fa-solid fa-graduation-cap mr-2"></i> Education
+              </h3>
+              <div class="border-l-2 border-purple-500 pl-4">
+                <h4 class="font-bold">Diploma in Computer Technology</h4>
+                <p class="text-sm text-gray-400">
+                  Feni Computer Institute | 2020 - 2024
+                </p>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="glass p-6">
+              <h3 class="text-2xl font-semibold mb-4 text-purple-400">
+                <i class="fa-solid fa-briefcase mr-2"></i> Experience
+              </h3>
+              <div class="border-l-2 border-purple-500 pl-4">
+                <h4 class="font-bold">Junior Web Developer (Intern)</h4>
+                <p class="text-sm text-gray-400">
+                  Freelance Projects | 2023 - Present
+                </p>
+                <p class="text-sm text-gray-400 mt-2">
+                  Working on various frontend projects using HTML, CSS, and
+                  JavaScript for local clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-[#111827]">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16">
+          My <span class="text-purple-500">Skills</span>
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <!-- Technical Skills -->
+          <div>
+            <h3 class="text-2xl font-bold mb-8 flex items-center">
+              <span class="bg-purple-600 p-2 rounded-lg mr-3"
+                ><i class="fa-solid fa-laptop-code text-white"></i
+              ></span>
+              Technical Skills
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <!-- Skill Item -->
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <i
+                  class="fa-brands fa-html5 text-4xl text-orange-500 group-hover:scale-110 transition"
+                ></i>
+                <p class="mt-2 font-medium">HTML</p>
+              </div>
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <i
+                  class="fa-brands fa-css3-alt text-4xl text-blue-500 group-hover:scale-110 transition"
+                ></i>
+                <p class="mt-2 font-medium">CSS</p>
+              </div>
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                  class="w-10 h-10 mx-auto group-hover:scale-110 transition"
+                  alt=""
+                />
+                <p class="mt-2 font-medium">Tailwind</p>
+              </div>
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <i
+                  class="fa-brands fa-js text-4xl text-yellow-400 group-hover:scale-110 transition"
+                ></i>
+                <p class="mt-2 font-medium">JavaScript</p>
+              </div>
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <i
+                  class="fa-brands fa-react text-4xl text-cyan-400 group-hover:scale-110 transition"
+                ></i>
+                <p class="mt-2 font-medium">React</p>
+              </div>
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <i
+                  class="fa-brands fa-node-js text-4xl text-green-500 group-hover:scale-110 transition"
+                ></i>
+                <p class="mt-2 font-medium">Node.js</p>
+              </div>
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <i
+                  class="fa-solid fa-database text-4xl text-green-400 group-hover:scale-110 transition"
+                ></i>
+                <p class="mt-2 font-medium">MongoDB</p>
+              </div>
+              <div
+                class="glass p-4 text-center hover:border-purple-500 transition-all group"
+              >
+                <i
+                  class="fa-brands fa-github text-4xl text-white group-hover:scale-110 transition"
+                ></i>
+                <p class="mt-2 font-medium">GitHub</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div>
+            <h3 class="text-2xl font-bold mb-8 flex items-center">
+              <span class="bg-blue-600 p-2 rounded-lg mr-3"
+                ><i class="fa-solid fa-lightbulb text-white"></i
+              ></span>
+              Other Skills
+            </h3>
+            <div class="space-y-6">
+              <!-- Problem Solving -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Problem Solving</span>
+                  <span class="text-purple-400">90%</span>
+                </div>
+                <div class="w-full bg-gray-700 h-2.5 rounded-full">
+                  <div
+                    class="bg-purple-500 h-2.5 rounded-full"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </div>
+              <!-- Team Work -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Team Work</span>
+                  <span class="text-blue-400">85%</span>
+                </div>
+                <div class="w-full bg-gray-700 h-2.5 rounded-full">
+                  <div
+                    class="bg-blue-500 h-2.5 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+              <!-- Communication -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Communication</span>
+                  <span class="text-pink-400">80%</span>
+                </div>
+                <div class="w-full bg-gray-700 h-2.5 rounded-full">
+                  <div
+                    class="bg-pink-500 h-2.5 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 px-6 bg-[#0f172a]">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16">
+          Professional <span class="text-purple-500">Journey</span>
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <!-- Left Side: Work Philosophy & Stats -->
+          <div class="lg:col-span-1 space-y-8">
+            <div class="glass p-8 border-l-4 border-purple-500">
+              <h3 class="text-2xl font-bold mb-4 text-white">
+                Work Philosophy
+              </h3>
+              <p class="text-gray-400 leading-relaxed mb-6">
+                I believe in writing clean, maintainable code and creating
+                user-centric designs. My approach is to understand the problem
+                first, then build a solution that scales.
+              </p>
+              <!-- Quick Stats -->
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 bg-slate-800/50 rounded-lg text-center">
+                  <h4 class="text-2xl font-bold text-purple-500">2+</h4>
+                  <p class="text-xs text-gray-400 uppercase">Years Exp.</p>
+                </div>
+                <div class="p-4 bg-slate-800/50 rounded-lg text-center">
+                  <h4 class="text-2xl font-bold text-blue-500">20+</h4>
+                  <p class="text-xs text-gray-400 uppercase">Projects</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Work Process -->
+            <div class="glass p-8">
+              <h3
+                class="text-xl font-bold mb-6 text-white italic underline decoration-purple-500"
+              >
+                My Process
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-start space-x-3">
+                  <span class="text-purple-500 mt-1"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                  <div>
+                    <h5 class="font-semibold text-gray-200 text-sm">
+                      Analyze Requirements
+                    </h5>
+                    <p class="text-xs text-gray-500">
+                      Understanding client needs and project goals.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <span class="text-blue-500 mt-1"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                  <div>
+                    <h5 class="font-semibold text-gray-200 text-sm">
+                      Design & Prototype
+                    </h5>
+                    <p class="text-xs text-gray-500">
+                      Creating UI/UX wireframes and visual layouts.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <span class="text-green-500 mt-1"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                  <div>
+                    <h5 class="font-semibold text-gray-200 text-sm">
+                      Clean Development
+                    </h5>
+                    <p class="text-xs text-gray-500">
+                      Writing optimized and responsive code.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Side: Experience Timeline (Static) -->
+          <div class="lg:col-span-2">
+            <div
+              class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-purple-500 before:via-blue-500 before:to-transparent"
+            >
+              <!-- Experience Item 1 -->
+              <div
+                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+              >
+                <div
+                  class="flex items-center justify-center w-10 h-10 rounded-full border border-purple-500 bg-slate-900 text-purple-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
+                >
+                  <i class="fa-solid fa-briefcase text-sm"></i>
+                </div>
+                <div
+                  class="w-[calc(100%-4rem)] md:w-[45%] glass p-6 hover:shadow-purple-500/10 hover:border-purple-500/50 transition-all"
+                >
+                  <div
+                    class="flex flex-col md:flex-row md:items-center justify-between mb-2"
+                  >
+                    <h4 class="font-bold text-xl text-white">
+                      Frontend Developer
+                    </h4>
+                    <span
+                      class="w-fit px-3 py-1 bg-purple-500/20 text-purple-400 text-[10px] uppercase font-bold rounded-full border border-purple-500/30 mt-2 md:mt-0"
+                      >Full-time</span
+                    >
+                  </div>
+                  <div class="text-purple-400 font-medium mb-1">
+                    Creative Agency BD
+                  </div>
+                  <div class="text-xs text-gray-400 mb-4 italic">
+                    <i class="fa-solid fa-calendar-days mr-2"></i>Jan 2023 -
+                    Present | Dhaka (Remote)
+                  </div>
+                  <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                    Leading the frontend team to build responsive and
+                    high-performance web applications using React and Tailwind
+                    CSS.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-2 py-1 bg-slate-800 text-gray-300 text-[10px] rounded"
+                      >React</span
+                    >
+                    <span
+                      class="px-2 py-1 bg-slate-800 text-gray-300 text-[10px] rounded"
+                      >Tailwind</span
+                    >
+                    <span
+                      class="px-2 py-1 bg-slate-800 text-gray-300 text-[10px] rounded"
+                      >Firebase</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience Item 2 -->
+              <div
+                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+              >
+                <div
+                  class="flex items-center justify-center w-10 h-10 rounded-full border border-blue-500 bg-slate-900 text-blue-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300"
+                >
+                  <i class="fa-solid fa-code text-sm"></i>
+                </div>
+                <div
+                  class="w-[calc(100%-4rem)] md:w-[45%] glass p-6 hover:shadow-blue-500/10 hover:border-blue-500/50 transition-all"
+                >
+                  <div
+                    class="flex flex-col md:flex-row md:items-center justify-between mb-2"
+                  >
+                    <h4 class="font-bold text-xl text-white">
+                      Junior Web Developer
+                    </h4>
+                    <span
+                      class="w-fit px-3 py-1 bg-blue-500/20 text-blue-400 text-[10px] uppercase font-bold rounded-full border border-blue-500/30 mt-2 md:mt-0"
+                      >Internship</span
+                    >
+                  </div>
+                  <div class="text-blue-400 font-medium mb-1">Tech Park IT</div>
+                  <div class="text-xs text-gray-400 mb-4 italic">
+                    <i class="fa-solid fa-calendar-days mr-2"></i>June 2022 -
+                    Dec 2022 | Feni, BD
+                  </div>
+                  <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                    Assisted in developing CMS-based websites and fixing UI bugs
+                    for various international clients.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-2 py-1 bg-slate-800 text-gray-300 text-[10px] rounded"
+                      >HTML5</span
+                    >
+                    <span
+                      class="px-2 py-1 bg-slate-800 text-gray-300 text-[10px] rounded"
+                      >CSS3</span
+                    >
+                    <span
+                      class="px-2 py-1 bg-slate-800 text-gray-300 text-[10px] rounded"
+                      >JavaScript</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">
+            My Creative <span class="text-purple-500">Projects</span>
+          </h2>
+          <p class="text-gray-400 max-w-xl mx-auto">
+            Here are some of my best works that showcase my skills in frontend
+            development and design.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="glass overflow-hidden group hover:border-purple-500/50 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600"
+                alt="Project 1"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">E-Commerce App</h3>
+              <p class="text-gray-400 text-sm mb-4 line-clamp-2">
+                A fully responsive online store with product filtering, cart
+                system, and checkout functionality.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded border border-purple-500/20"
+                  >React</span
+                >
+                <span
+                  class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20"
+                  >Tailwind</span
+                >
+                <span
+                  class="text-[10px] bg-green-500/10 text-green-400 px-2 py-1 rounded border border-green-500/20"
+                  >Firebase</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <a
+                  href="#"
+                  class="text-sm font-semibold text-purple-400 hover:text-purple-300 flex items-center"
+                >
+                  Live Demo
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"
+                  ></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition text-xl"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="glass overflow-hidden group hover:border-blue-500/50 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+                alt="Project 2"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                Dashboard UI Kit
+              </h3>
+              <p class="text-gray-400 text-sm mb-4 line-clamp-2">
+                Modern admin dashboard with interactive charts, dark mode, and
+                user management features.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20"
+                  >JavaScript</span
+                >
+                <span
+                  class="text-[10px] bg-pink-500/10 text-pink-400 px-2 py-1 rounded border border-pink-500/20"
+                  >Chart.js</span
+                >
+                <span
+                  class="text-[10px] bg-orange-500/10 text-orange-400 px-2 py-1 rounded border border-orange-500/20"
+                  >CSS3</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <a
+                  href="#"
+                  class="text-sm font-semibold text-blue-400 hover:text-blue-300 flex items-center"
+                >
+                  Live Demo
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"
+                  ></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition text-xl"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="glass overflow-hidden group hover:border-green-500/50 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600"
+                alt="Project 3"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                Portfolio Website
+              </h3>
+              <p class="text-gray-400 text-sm mb-4 line-clamp-2">
+                A clean and professional portfolio for developers with smooth
+                scrolling and animations.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded border border-purple-500/20"
+                  >HTML5</span
+                >
+                <span
+                  class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20"
+                  >Tailwind</span
+                >
+                <span
+                  class="text-[10px] bg-yellow-500/10 text-yellow-400 px-2 py-1 rounded border border-yellow-500/20"
+                  >AOS.js</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <a
+                  href="#"
+                  class="text-sm font-semibold text-purple-400 hover:text-purple-300 flex items-center"
+                >
+                  Live Demo
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"
+                  ></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition text-xl"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-[#111827]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">
+            My <span class="text-purple-500">Services</span>
+          </h2>
+          <p class="text-gray-400 max-w-xl mx-auto">
+            I provide high-quality services to help you build your digital
+            presence.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Service 1 -->
+          <div
+            class="glass p-8 text-center hover:-translate-y-2 transition-transform duration-300 border-b-4 border-purple-500"
+          >
+            <div
+              class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fa-solid fa-pen-nib text-3xl text-purple-500"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Web Design</h3>
+            <p class="text-gray-400 text-sm">
+              Modern and aesthetic UI/UX designs that attract users.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="glass p-8 text-center hover:-translate-y-2 transition-transform duration-300 border-b-4 border-blue-500"
+          >
+            <div
+              class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fa-solid fa-code text-3xl text-blue-500"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Frontend Dev</h3>
+            <p class="text-gray-400 text-sm">
+              Converting designs into clean, high-performance code.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="glass p-8 text-center hover:-translate-y-2 transition-transform duration-300 border-b-4 border-green-500"
+          >
+            <div
+              class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i
+                class="fa-solid fa-mobile-screen-button text-3xl text-green-500"
+              ></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Responsive</h3>
+            <p class="text-gray-400 text-sm">
+              Websites that look perfect on mobiles, tablets, and desktops.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="glass p-8 text-center hover:-translate-y-2 transition-transform duration-300 border-b-4 border-red-500"
+          >
+            <div
+              class="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fa-solid fa-bug-slash text-3xl text-red-500"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Bug Fixing</h3>
+            <p class="text-gray-400 text-sm">
+              Identifying and resolving technical issues and UI bugs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube / Knowledge Sharing Section -->
+    <section id="youtube" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="glass p-8 md:p-12 overflow-hidden relative">
+          <!-- Background Glow -->
+          <div
+            class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-red-600/20 rounded-full blur-3xl"
+          ></div>
+
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10"
+          >
+            <!-- Left: Channel Info -->
+            <div>
+              <div
+                class="inline-flex items-center space-x-2 bg-red-600/20 text-red-500 px-4 py-1 rounded-full text-sm font-bold mb-6"
+              >
+                <i class="fa-brands fa-youtube"></i>
+                <span>Content Creator</span>
+              </div>
+              <h2 class="text-4xl font-bold text-white mb-6">
+                Sharing Knowledge on <span class="text-red-600">YouTube</span>
+              </h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                Apart from coding, I am passionate about teaching. I run a
+                YouTube channel where I simplify complex **Science subjects**
+                for students. It helps me improve my communication skills and
+                keep my fundamental knowledge sharp.
+              </p>
+
+              <!-- Channel Stats (Example) -->
+              <div class="flex space-x-8 mb-8">
+                <div>
+                  <h4 class="text-2xl font-bold text-white">5K+</h4>
+                  <p class="text-gray-400 text-sm">Subscribers</p>
+                </div>
+                <div>
+                  <h4 class="text-2xl font-bold text-white">50+</h4>
+                  <p class="text-gray-400 text-sm">Videos</p>
+                </div>
+              </div>
+
+              <a
+                href="https://www.youtube.com/@mathematicscodinglearning.8261"
+                target="_blank"
+                class="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold transition transform hover:scale-105 shadow-xl shadow-red-600/20"
+              >
+                Visit My Channel <i class="fa-brands fa-youtube ml-2"></i>
+              </a>
+            </div>
+
+            <!-- Right: Featured Video (Iframe) -->
+            <div class="relative group">
+              <div
+                class="absolute -inset-2 bg-gradient-to-r from-red-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+              ></div>
+              <div
+                class="relative aspect-video rounded-xl overflow-hidden shadow-2xl"
+              >
+                <!-- Replace VIDEO_ID with your actual video ID -->
+
+                <!-- <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/B4drAFazHOk?si=BqFqaoccUPugniGM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe> -->
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/B4drAFazHOk?si=BqFqaoccUPugniGM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-[#111827]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold mb-4">
+            Client <span class="text-purple-500">Reviews</span>
+          </h2>
+          <p class="text-gray-400">
+            What people say about my work and dedication.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="glass p-8 relative">
+            <i
+              class="fa-solid fa-quote-left text-4xl text-purple-500/20 absolute top-4 left-4"
+            ></i>
+            <div class="flex text-yellow-400 mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-gray-300 mb-6 relative z-10 italic">
+              "Sourav is an exceptional developer. He delivered my project on
+              time and the quality of code was top-notch. Highly recommended!"
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://ui-avatars.com/api/?name=John+Doe&background=8b5cf6&color=fff"
+                class="w-12 h-12 rounded-full border-2 border-purple-500"
+                alt=""
+              />
+              <div>
+                <h4 class="font-bold text-white">John Doe</h4>
+                <p class="text-xs text-gray-500">CEO, TechFlow</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="glass p-8 relative border-t-4 border-blue-500">
+            <i
+              class="fa-solid fa-quote-left text-4xl text-blue-500/20 absolute top-4 left-4"
+            ></i>
+            <div class="flex text-yellow-400 mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-gray-300 mb-6 relative z-10 italic">
+              "His attention to detail and problem-solving skills are
+              impressive. He made our website incredibly fast and responsive."
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://ui-avatars.com/api/?name=Sarah+Smith&background=3b82f6&color=fff"
+                class="w-12 h-12 rounded-full border-2 border-blue-500"
+                alt=""
+              />
+              <div>
+                <h4 class="font-bold text-white">Sarah Smith</h4>
+                <p class="text-xs text-gray-500">Marketing Director</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="glass p-8 relative">
+            <i
+              class="fa-solid fa-quote-left text-4xl text-purple-500/20 absolute top-4 left-4"
+            ></i>
+            <div class="flex text-yellow-400 mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="text-gray-300 mb-6 relative z-10 italic">
+              "Great communication and very professional. He understood my
+              requirements perfectly and gave valuable suggestions."
+            </p>
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://ui-avatars.com/api/?name=Alex+M&background=8b5cf6&color=fff"
+                class="w-12 h-12 rounded-full border-2 border-purple-500"
+                alt=""
+              />
+              <div>
+                <h4 class="font-bold text-white">Alex Morgan</h4>
+                <p class="text-xs text-gray-500">Startup Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Contact Info -->
+          <div>
+            <h2 class="text-4xl font-bold mb-6">
+              Let's Work <span class="text-purple-500">Together</span>
+            </h2>
+            <p class="text-gray-400 mb-10 text-lg">
+              I'm currently available for freelance work or full-time positions.
+              If you have a project or just want to say hi, feel free to reach
+              out!
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-center space-x-6 group">
+                <div
+                  class="w-14 h-14 glass flex items-center justify-center text-purple-500 text-xl group-hover:bg-purple-500 group-hover:text-white transition-all"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 uppercase tracking-widest">
+                    Email Me
+                  </p>
+                  <h4 class="text-lg font-bold text-white">
+                    contact@souravnath.com
+                  </h4>
+                </div>
+              </div>
+              <div class="flex items-center space-x-6 group">
+                <div
+                  class="w-14 h-14 glass flex items-center justify-center text-blue-500 text-xl group-hover:bg-blue-500 group-hover:text-white transition-all"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 uppercase tracking-widest">
+                    Call Me
+                  </p>
+                  <h4 class="text-lg font-bold text-white">+880 1XXX XXXXXX</h4>
+                </div>
+              </div>
+              <div class="flex items-center space-x-6 group">
+                <div
+                  class="w-14 h-14 glass flex items-center justify-center text-green-500 text-xl group-hover:bg-green-500 group-hover:text-white transition-all"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 uppercase tracking-widest">
+                    Location
+                  </p>
+                  <h4 class="text-lg font-bold text-white">Feni, Bangladesh</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass p-8 md:p-10 border-t-2 border-purple-500">
+            <form action="#" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="bg-slate-800 border border-gray-700 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 outline-none transition text-white"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="bg-slate-800 border border-gray-700 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 outline-none transition text-white"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                class="w-full bg-slate-800 border border-gray-700 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 outline-none transition text-white"
+              />
+              <textarea
+                rows="5"
+                placeholder="Your Message"
+                class="w-full bg-slate-800 border border-gray-700 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 outline-none transition text-white"
+              ></textarea>
+              <button
+                class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-lg transition shadow-xl shadow-purple-500/20"
+              >
+                Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-800 bg-[#0f172a]">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0"
+      >
+        <!-- Branding -->
+        <div class="text-2xl font-bold tracking-tighter">
+          SOURAV <span class="text-purple-500">NATH</span>
+        </div>
+
+        <!-- Quick Links -->
+        <ul class="flex space-x-6 text-sm text-gray-400">
+          <li>
+            <a href="#home" class="hover:text-purple-500 transition">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-purple-500 transition">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-purple-500 transition"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@mathematicscodinglearning.8261"
+              class="hover:text-purple-500 transition"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+
+        <!-- Social Links -->
+        <div class="flex space-x-5 text-xl">
+          <a href="#" class="text-gray-500 hover:text-white transition"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="#" class="text-gray-500 hover:text-blue-500 transition"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#" class="text-gray-500 hover:text-red-600 transition"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" class="text-gray-500 hover:text-blue-400 transition"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+      <div class="text-center mt-12 text-gray-600 text-sm">
+        © 2024 Sourav Nath. All rights reserved. Built with
+        <i class="fa-solid fa-heart text-red-600 animate-pulse"></i> in Feni.
+      </div>
+    </footer>
+
+    <!-- Typing Animation Script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#typing-text", {
+        strings: [
+          "Frontend Developer",
+          "Web Designer",
+          "UI/UX Enthusiast",
+          "Problem Solver",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+
+    <!-- JavaScript to handle Dynamic Adding
+    <script>
+      function addExperience() {
+        const company = document.getElementById("company").value;
+        const title = document.getElementById("title").value;
+        const type = document.getElementById("type").value;
+        const location = document.getElementById("location").value;
+        const startDate = document.getElementById("startDate").value;
+        const endDate = document.getElementById("endDate").value || "Present";
+        const desc = document.getElementById("desc").value;
+        const tags = document.getElementById("tags").value.split(",");
+
+        if (!company || !title) {
+          alert("Please fill at least Company Name and Job Title!");
+          return;
+        }
+
+        const expList = document.getElementById("experienceList");
+
+        // Create Tags HTML
+        let tagsHTML = "";
+        tags.forEach((tag) => {
+          if (tag.trim() !== "") {
+            tagsHTML += `<span class="px-2 py-1 bg-slate-800 text-gray-300 text-[10px] rounded uppercase tracking-wider">${tag.trim()}</span>`;
+          }
+        });
+
+        const newItem = `
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group animate-fade-in">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-purple-500 bg-slate-900 text-purple-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <i class="fa-solid fa-briefcase text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[45%] glass p-6 hover:border-purple-500 transition-all">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-xl text-white">${title}</h4>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-400 text-xs rounded-full border border-purple-500/30">${type}</span>
+                        </div>
+                        <div class="text-purple-400 font-medium mb-1">${company}</div>
+                        <div class="text-sm text-gray-400 mb-4 italic"><i class="fa-solid fa-calendar-days mr-2"></i>${startDate} - ${endDate} | ${location}</div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">${desc}</p>
+                        <div class="flex flex-wrap gap-2">${tagsHTML}</div>
+                    </div>
+                </div>
+            `;
+
+        expList.insertAdjacentHTML("afterbegin", newItem);
+        document.getElementById("expForm").reset();
+      }
+    </script> -->
+  </body>
+</html>
