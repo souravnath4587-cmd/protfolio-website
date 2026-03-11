@@ -59,12 +59,21 @@
   </head>
   <body>
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav
       class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass mt-4 max-w-6xl left-1/2 -translate-x-1/2"
     >
+      <!-- Logo -->
       <div class="text-2xl font-bold tracking-tighter">
-        SOURAV <span class="text-purple-500">NATH</span>
+        <img
+          src="./images/logo/sourav_nath.png"
+          class="w-[200px]"
+          alt=""
+          srcset=""
+        />
       </div>
+
+      <!-- Desktop Menu (Hidden on Mobile) -->
       <ul class="hidden md:flex space-x-8 font-medium">
         <li>
           <a href="#home" class="hover:text-purple-400 transition">Home</a>
@@ -78,19 +87,54 @@
           >
         </li>
         <li>
+          <a href="#youtube" class="hover:text-purple-400 transition"
+            >YouTube</a
+          >
+        </li>
+        <li>
           <a href="#contact" class="hover:text-purple-400 transition"
             >Contact</a
           >
         </li>
       </ul>
+
+      <!-- Mobile Toggle Button (Visible only on Mobile) -->
       <button
-        class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-purple-500/30"
+        id="menu-btn"
+        class="md:hidden text-2xl text-white focus:outline-none"
       >
-        Let's Talk
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
       </button>
-      <!-- <a href="YOUR_LINK" class="hover:text-red-500 transition"
-        ><i class="fa-brands fa-youtube"></i
-      ></a> -->
+
+      <!-- Mobile Menu (Dropdown List) -->
+      <div
+        id="mobile-menu"
+        class="hidden absolute bg-black top-full left-0 w-full glass mt-2 p-6 flex-col space-y-4 text-center md:hidden"
+      >
+        <a
+          href="#home"
+          class="hover:text-purple-400 transition block py-2 border-b border-white/10"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="hover:text-purple-400 transition block py-2 border-b border-white/10"
+          >About</a
+        >
+        <a
+          href="#projects"
+          class="hover:text-purple-400 transition block py-2 border-b border-white/10"
+          >Projects</a
+        >
+        <a
+          href="#youtube"
+          class="hover:text-purple-400 transition block py-2 border-b border-white/10"
+          >YouTube</a
+        >
+        <a href="#contact" class="hover:text-purple-400 transition block py-2"
+          >Contact</a
+        >
+      </div>
     </nav>
 
     <!-- Hero Section -->
@@ -123,7 +167,7 @@
               Hire Me
             </a>
             <a
-              href="your-resume.pdf"
+              href="/file/My-Resume.pdf"
               download
               class="border border-purple-500 hover:bg-purple-500/10 text-white px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105"
             >
@@ -135,13 +179,21 @@
           <div
             class="mt-10 flex justify-center md:justify-start space-x-6 text-2xl text-gray-400"
           >
-            <a href="#" class="hover:text-purple-500 transition"
+            <a
+              href="https://github.com/souravnath4587-cmd"
+              target="_blank"
+              class="hover:text-purple-500 transition"
               ><i class="fa-brands fa-github"></i
             ></a>
-            <a href="#" class="hover:text-purple-500 transition"
+            <a
+              href="https://www.linkedin.com/in/sourav-nath-9520563b6/"
+              target="_blank"
+              class="hover:text-purple-500 transition"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
-            <a href="#" class="hover:text-purple-500 transition"
+            <a
+              href="https://www.facebook.com/sourav.nath.5817"
+              class="hover:text-purple-500 transition"
               ><i class="fa-brands fa-facebook"></i
             ></a>
           </div>
@@ -156,7 +208,7 @@
             ></div>
             <!-- Profile Image -->
             <img
-              src="./images/IMG_20250905_160636.jpg"
+              src="./images/sourav4.jpg"
               alt="Sourav Nath"
               class="profile-img w-full h-full object-cover rounded-full shadow-2xl relative z-10"
             />
@@ -1062,7 +1114,7 @@
                     Email Me
                   </p>
                   <h4 class="text-lg font-bold text-white">
-                    contact@souravnath.com
+                    souravnath4587@gmail.com
                   </h4>
                 </div>
               </div>
@@ -1076,7 +1128,7 @@
                   <p class="text-sm text-gray-500 uppercase tracking-widest">
                     Call Me
                   </p>
-                  <h4 class="text-lg font-bold text-white">+880 1XXX XXXXXX</h4>
+                  <h4 class="text-lg font-bold text-white">+880 1799052958</h4>
                 </div>
               </div>
               <div class="flex items-center space-x-6 group">
@@ -1165,16 +1217,28 @@
 
         <!-- Social Links -->
         <div class="flex space-x-5 text-xl">
-          <a href="#" class="text-gray-500 hover:text-white transition"
+          <a
+            href="https://github.com/souravnath4587-cmd"
+            target="_blank"
+            class="text-gray-500 hover:text-white transition"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="#" class="text-gray-500 hover:text-blue-500 transition"
+          <a
+            href="https://www.linkedin.com/in/sourav-nath-9520563b6/"
+            target="_blank"
+            class="text-gray-500 hover:text-blue-500 transition"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-          <a href="#" class="text-gray-500 hover:text-red-600 transition"
+          <a
+            href="https://www.youtube.com/@mathematicscodinglearning.8261"
+            target="_blank"
+            class="text-gray-500 hover:text-red-600 transition"
             ><i class="fa-brands fa-youtube"></i
           ></a>
-          <a href="#" class="text-gray-500 hover:text-blue-400 transition"
+          <a
+            href="https://www.facebook.com/sourav.nath.5817"
+            target="_blank"
+            class="text-gray-500 hover:text-blue-400 transition"
             ><i class="fa-brands fa-facebook"></i
           ></a>
         </div>
@@ -1185,6 +1249,38 @@
       </div>
     </footer>
 
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+
+      menuBtn.addEventListener("click", () => {
+        // Toggle Menu visibility
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+
+        // Change Icon (Bars to X-mark)
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-xmark");
+        }
+      });
+
+      // Close menu when a link is clicked
+      const navLinks = mobileMenu.querySelectorAll("a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("flex");
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        });
+      });
+    </script>
     <!-- Typing Animation Script -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
